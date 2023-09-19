@@ -1,0 +1,219 @@
+style.css
+/*  Common Css Start  */
+* {
+    width: 1500px;
+    margin:  0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-card i{
+    font-size: 50px;
+    color: #02918b;
+}
+
+.about-card h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+}
+
+.about-card p{
+    font-size: 11px;
+    color: #7e8287;
+}
+/*  Common Css End  */
+
+/*  Nav Section Css Start  */
+nav{
+    background-color: #02918b;
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    font-size: 12px ;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 19px 25px;
+    display: inline-block;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: #cfc91d;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+}
+
+.heading h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918b;
+    text-transform: uppercase;
+}
+
+.heading p{
+    font-size: 16px;
+    color: #7e8287;
+}
+/*  Nav Section Css End  */
+
+/*  Banner Section Css Start  */
+
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("../img/banner.jpg");
+    background-size: cover;
+    padding: 200px 0;
+}
+
+#banner .container{
+    text-align: center;
+    color: #ffffff;
+}
+
+#banner .container h1{
+    line-height: 5px;
+    font-size: 50px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
+.image-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-button a{
+    margin: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: #cfc91d;
+    padding: 14px 42px;
+    text-transform: uppercase;
+}
+
+a:hover{
+   color: #02918b;
+}
+/*  Banner Section Css End  */
+
+/*  About Section Css Start  */
+
+#about{
+    padding: 98px 0;
+}
+
+.about-row{
+    display: flex;
+}
+
+#about .about-cards{
+    margin: 70px 0;
+}
+
+
+#about .about-card{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #7e8287;
+    padding: 36px 0;
+}
+
+
+#about .about-card:nth-child(4) {
+    border: none;
+}
+/*  About Section Css End  */
+
+/* Service Section Css Start */
+
+#service{
+    background-image: url("../img/service.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#service .heading{
+    width: 50%;
+    margin-left: 82px;
+    text-align: left;
+    padding: 60px 0;
+}
+
+#service .about-card{
+    text-align: left;
+    padding: 52px 82px;
+}
+/*  Service Section Css End  */
+
+/* Work Section Css Start */
+
+#work{
+    padding: 110px  0;
+}
+
+#work .work-card{
+    width: 25%;
+    position: relative;
+    background-size: cover;
+}
+
+#work .work-card img{
+    width: 100%;
+}
+
+#work .work-card .overlay{
+    background-color: rgba(2, 145, 139, 0.85);
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    inset: 30px;
+    padding-top: 40px;
+    transform: scale(0);
+    transition: 0.5s;
+    opacity: 0;
+    
+}
+
+#work .work-card:hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+}
+
+#work .heading{
+    padding-bottom: 40px;
+}
+/* Work Section Css End */
